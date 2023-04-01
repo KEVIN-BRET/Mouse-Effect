@@ -1,18 +1,18 @@
 // Créer 3 ronds de tailles différentes (dont un qui remplacera la souris)
 
-const mousecursor = document.querySelector(".mousecursor");
-const mouseCircle1 = document.querySelector(".mousecircle1");
-const mouseCircle2 = document.querySelector(".mousecircle2");
+// const mousecursor = document.querySelector(".mousecursor");
+// const mouseCircle1 = document.querySelector(".mousecircle1");
+// const mouseCircle2 = document.querySelector(".mousecircle2");
 
-// Ajouter un événement sur la fenetre (window) puis animer la position de ces ronds (top, left injecter "e")
+// je vais mettre des id aux balises html des cercles, donc plus besoin de querySelector car JS reconnais nativement les id !
 
 window.addEventListener("mousemove", (e) => {
-  mouseCircle1.style.left = e.pageX + "px";
-  mouseCircle1.style.top = e.pageY + "px";
-  mouseCircle2.style.left = e.pageX + "px";
-  mouseCircle2.style.top = e.pageY + "px";
-  mousecursor.style.left = e.pageX + "px";
-  mousecursor.style.top = e.pageY + "px";
+  cursor.style.top = e.pageY + "px";
+  cursor.style.left = e.pageX + "px";
+  mouse1.style.top = e.pageY + "px";
+  mouse1.style.left = e.pageX + "px";
+  mouse2.style.top = e.pageY + "px";
+  mouse2.style.left = e.pageX + "px";
 });
 
 // S'assurer que les liens sont clickables

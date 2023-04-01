@@ -101,45 +101,38 @@ footer img {
   height: 60px;
 }
 
-/* je mets mise en formes les 3 cercles */
+/* je separer les propriétés communes dans .mouse, et les propriétés spécifiques dans leurs id */
 
-.mousecursor {
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  background-color: #2128bd;
-  mix-blend-mode: difference;
+.mouse {
   position: absolute;
+  border-radius: 1000px;
   transform: translate(-50%, -50%);
+  mix-blend-mode: difference;
+}
+
+#cursor {
+  background-color: #2128bd;
+  height: 14px;
+  width: 14px;
   z-index: 10;
 }
 
-.mousecircle1 {
-  background: white;
-  opacity: 0.9;
-  mix-blend-mode: difference;
+#mouse1 {
   height: 100px;
   width: 100px;
-  position: absolute;
-  border-radius: 100px;
-  transform: translate(-50%, -50%);
-  transition: 0.1s ease;
+  background: white;
+  transition: 0.1s ease-out;
   z-index: 5;
 }
 
-.mousecircle2 {
+#mouse2 {
   height: 200px;
   width: 200px;
-  position: absolute;
-  background: black;
-  opacity: 0.2;
-  border-radius: 100px;
-  transform: translate(-50%, -50%);
-  transition: 0.12s ease;
-  z-index: 1;
+  background: rgb(41, 41, 41);
+  opacity: 0.8;
+  transition: 0.15s ease-out;
+  z-index: 2;
 }
-
-/* ------------------ */
 
 /* ************** RESPONSIVE *************** */
 
